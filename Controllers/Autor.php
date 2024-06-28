@@ -104,7 +104,7 @@ class Autor extends Controller
         echo json_encode($msg, JSON_UNESCAPED_UNICODE);
         die();
     }
-    
+
     public function editar($id)
     {
         $data = $this->model->editAutor($id);
@@ -122,6 +122,7 @@ class Autor extends Controller
         echo json_encode($msg, JSON_UNESCAPED_UNICODE);
         die();
     }
+
     public function reingresar($id)
     {
         $data = $this->model->estadoAutor(1, $id);
@@ -133,6 +134,8 @@ class Autor extends Controller
         echo json_encode($msg, JSON_UNESCAPED_UNICODE);
         die();
     }
+
+    
     public function buscarAutor()
     {
         if (isset($_GET['q'])) {
