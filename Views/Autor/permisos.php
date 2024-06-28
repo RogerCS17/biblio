@@ -1,4 +1,5 @@
 <?php include "Views/Templates/header.php"; ?>
+
 <div class="row">
     <div class="col-md-5 mx-auto">
         <div class="card">
