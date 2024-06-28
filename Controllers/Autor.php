@@ -1,4 +1,6 @@
 <?php
+
+
 class Autor extends Controller
 {
     public function __construct()
@@ -40,6 +42,7 @@ class Autor extends Controller
         echo json_encode($data, JSON_UNESCAPED_UNICODE);
         die();
     }
+
     public function registrar()
     {
         $autor = strClean($_POST['autor']);
@@ -97,9 +100,11 @@ class Autor extends Controller
                 }
             }
         }
+
         echo json_encode($msg, JSON_UNESCAPED_UNICODE);
         die();
     }
+    
     public function editar($id)
     {
         $data = $this->model->editAutor($id);
