@@ -130,6 +130,7 @@ class Prestamos extends Controller
         }
         $pdf->Output("prestamos.pdf", "I");
     }
+    
     public function ticked($id_prestamo)
     {
         $datos = $this->model->selectDatos();

@@ -17,6 +17,7 @@ class Usuarios extends Controller{
         }
         $this->views->getView($this, "index");
     }
+    
     public function listar()
     {
         if (empty($_SESSION['activo'])) {

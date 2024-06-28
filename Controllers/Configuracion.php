@@ -9,6 +9,7 @@ class Configuracion extends Controller
         }
         parent::__construct();
     }
+    
     public function index()
     {
 		$id_user = $_SESSION['id_usuario'];

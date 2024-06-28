@@ -21,6 +21,7 @@ class Estudiantes extends Controller
     }
     public function listar()
     {
+        
         $data = $this->model->getEstudiantes();
         for ($i = 0; $i < count($data); $i++) {
             if ($data[$i]['estado'] == 1) {

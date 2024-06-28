@@ -101,6 +101,7 @@ class Autor extends Controller
             }
         }
 
+        
         echo json_encode($msg, JSON_UNESCAPED_UNICODE);
         die();
     }
@@ -135,7 +136,7 @@ class Autor extends Controller
         die();
     }
 
-    
+
     public function buscarAutor()
     {
         if (isset($_GET['q'])) {

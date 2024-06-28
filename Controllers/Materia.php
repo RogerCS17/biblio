@@ -15,6 +15,7 @@ class Materia extends Controller
             exit;
         }
     }
+    
     public function index()
     {
         $this->views->getView($this, "index");
